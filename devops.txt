@@ -1,7 +1,29 @@
-git config --global user.name "inaamChishti"
+1.git config --global user.name "inaamChishti"
 
 
-git config --global user.email "inaam.chishti2@gmail.com"
+2.git config --global user.email "inaam.chishti2@gmail.com"
 
 
-git config --list
+3.git config --list
+
+///////////////////////////////////////////
+The commands *git push -u origin main* and *git push origin main* are almost the same, but there's an important difference related to tracking branches:
+
+✅ git push origin main
+Pushes the main branch to the origin remote.
+
+Does not set up tracking between your local main and the remote main.
+
+You’ll need to specify the branch every time you push or pull in the future unless tracking is already set.
+
+✅ git push -u origin main
+Also pushes the main branch to the origin remote.
+
+The -u (or --set-upstream) sets the upstream (tracking) relationship between your local main branch and origin/main.
+
+After this, you can simply use:
+
+
+git push
+git pull
+////////////////////////////////////////////
